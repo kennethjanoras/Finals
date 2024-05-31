@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255; /* Light blue for better contrast */
+  --background-start-rgb: 48, 48, 48; /* Dark gray background start color */
+  --background-end-rgb: 64, 64, 64; /* Dark gray background end color */
+  --primary-color: 100, 255, 255; /* Light blue for primary color */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground-rgb: 0, 0, 0; /* Dark gray for better contrast on light background */
+    --background-start-rgb: 240, 240, 240; /* Light gray background start color */
+    --background-end-rgb: 255, 255, 255; /* Light gray background end color */
+    --primary-color: 100, 255, 255; /* Light blue for primary color */
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .bg-primary {
+    background-color: rgb(var(--primary-color));
+  }
+}
