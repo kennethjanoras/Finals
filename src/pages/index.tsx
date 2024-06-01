@@ -27,8 +27,8 @@ const Home: React.FC = () => {
 
   return (
     <Main>
-      <Container className='profile-section'>
-        <Card style={{ padding: '2rem', marginTop: '2rem', width: '80%', maxWidth: '800px', margin: 'auto' }}>
+      <Container className='profile-section' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+        <Card style={{ padding: '6rem', width: '80%', maxWidth: '800px', backgroundColor: '#fbe3e8', border: '2px solid red', borderLeftWidth: '15px'}}>
           <div className="mb-40">
             <Typography variant="h3" gutterBottom>{data.name}</Typography>
             <Typography variant="h6" gutterBottom style={{ color: 'black' }}>{data.email}</Typography>

@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --foreground-rgb: 255, 255, 255; /* Light blue for better contrast */
   --background-start-rgb: 48, 48, 48; /* Dark gray background start color */
@@ -36,4 +37,33 @@ body {
   .bg-primary {
     background-color: rgb(var(--primary-color));
   }
+}
+
+.nav-link {
+  border-radius: 0%;
+  padding: 0.5rem; /* Add padding around the link */
+  transition: background-color 0.3s ease, border 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #51e2f5; /* Change to your desired hover background color */
+  border: 1px solid #51e2f5; /* Add border on hover */
+  border-radius: 20px; /* Optional: Add rounded corners */
+  transform: scale(1.05); /* Slightly enlarge the element on hover */
+}
+
+.app{
+  text-align: center;
+}
+
+img{
+  max-width: 150px;
+  margin: 2px;
+}
+
+.bg{
+  background-image: url();
+  width: 200px;
+  height: 200px;
+  background-size: cover;
 }

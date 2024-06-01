@@ -2,17 +2,17 @@ import { NextApiRequest, NextApiResponse } from 'next';
 
 let userData = {
   id: 1,
-  name: 'Maui Azryl Lomuntad',
-  email: 'mauiazryl@gmail.com',
-  bio: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  name: 'Kenneth Clifford M. Janoras',
+  email: 'kennethsco@gmail.com',
+  bio: 'When nothing goes right, go left.',
   post: [
     {
       title: "Post 1",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      content: "A balanced diet is a coffee in each hand."
     },
     {
       title: "Post 2",
-      content: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      content: "I wish my wallet came with free refills."
     }
   ]
 };

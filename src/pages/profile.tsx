@@ -19,8 +19,8 @@ const ProfilePage: React.FC = () => {
   const { id, name, email, bio, post } = data; 
   return (
     <Main>
-      <Container maxWidth="md">
-        <Card>
+      <Container maxWidth="md" >
+        <Card style={{ width: '90%', padding: '6rem', maxWidth: '800px', marginTop: '2rem', backgroundColor: '#fbe3e8', border: '2px solid red', borderLeftWidth: '15px' }}>
           <CardContent>
             <Typography variant="h4" gutterBottom>Profile</Typography>
             <Formik
@@ -59,7 +59,6 @@ const ProfilePage: React.FC = () => {
                   <Field
                     name="bio"
                     as={TextField}
-                    multiline
                     rows={3}
                     label="Bio"
                     fullWidth
